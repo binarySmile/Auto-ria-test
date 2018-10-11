@@ -19,16 +19,8 @@ public class Util {
         return valueIn;
     }
 
-    public int getCastom(List <Object> listOb) {
+    public int getCustom(List <Object> listOb) {
         Integer listIn = Integer.valueOf(String.valueOf(listOb.size()));
         return listIn;
-    }
-
-    public int getCountCars(int count, List <String> marka) {
-        if (count == 0)
-            System.out.println("no cars " + marka + "by selected parameters");
-        if (count > 0)
-            System.out.println("on the selected parameters: " + count + " cars " + marka);
-        return count;
     }
 }
