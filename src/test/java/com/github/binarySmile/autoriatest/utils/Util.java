@@ -8,7 +8,7 @@ public class Util {
     public int getIntegerList(List <String> listSt) {
         ArrayList <Integer> list = new ArrayList <Integer>();
         for (String value : listSt)
-            list.add(Integer.parseInt(String.valueOf(value)));
+            list.add(Integer.parseInt(value));
         for (int i = 0; i < list.size(); i++)
             return list.get(i);
         return 0;
@@ -19,8 +19,7 @@ public class Util {
         return valueIn;
     }
 
-    public int getCustom(List <Object> listOb) {
-        Integer listIn = Integer.valueOf(String.valueOf(listOb.size()));
-        return listIn;
+    public int getQuantity(List <Object> listOb) {
+        return listOb.size();
     }
 }
